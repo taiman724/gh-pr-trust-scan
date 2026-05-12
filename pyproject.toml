@@ -26,8 +26,13 @@ classifiers = [
 requires-python = ">=3.10"
 dependencies = [
     "typer>=0.9.0",
-    "PyYAML>=6.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/taiman724/gh-pr-trust-scan"
+Repository = "https://github.com/taiman724/gh-pr-trust-scan"
+Issues = "https://github.com/taiman724/gh-pr-trust-scan/issues"
+"Companion article" = "https://dev.to/taiman724/pre-fork-due-diligence-for-oss-contributors-3e9o"
 
 [project.scripts]
 gh-pr-trust-scan = "gh_pr_trust_scan.__main__:app"

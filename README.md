@@ -161,6 +161,17 @@ The following are out of scope for v0.1 but are good candidates for future PRs:
 - GitLab / Gitea support
 - Config file for per-project allowlists
 
+## Acknowledgments
+
+This tool was built to scratch a real itch encountered while
+preparing AI-assisted contributions to open-source projects. Thanks
+to the maintainers of every repository that has clearly documented
+its AI contribution policy — your documentation is what makes a tool
+like this possible.
+
+See the companion article [Pre-fork due diligence for OSS contributors](https://dev.to/taiman724/pre-fork-due-diligence-for-oss-contributors-3e9o)
+for the broader context and rejection-vector taxonomy.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
