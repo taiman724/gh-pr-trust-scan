@@ -1,5 +1,9 @@
 # gh-pr-trust-scan
 
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/taiman724/gh-pr-trust-scan/actions/workflows/ci.yml/badge.svg)](https://github.com/taiman724/gh-pr-trust-scan/actions)
+
 Evaluate whether a GitHub repository is likely to reject AI-assisted pull requests — before you fork it.
 
 ## Motivation
