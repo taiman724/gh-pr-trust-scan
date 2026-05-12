@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gh-pr-trust-scan"
+version = "0.1.0"
+description = "Scan a GitHub repo before forking to evaluate if AI-generated PRs are likely to be rejected"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Shunta Hayashi", email = "201278530+taiman724@users.noreply.github.com" }
+]
+keywords = ["github", "pull-request", "ai", "trust", "scan", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+gh-pr-trust-scan = "gh_pr_trust_scan.__main__:app"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-mock>=3.11",
+    "ruff>=0.1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gh_pr_trust_scan"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = ["E501"]

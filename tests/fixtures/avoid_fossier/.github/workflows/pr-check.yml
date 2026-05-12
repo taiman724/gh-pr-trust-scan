@@ -1,0 +1,15 @@
+name: PR Trust Gate
+
+on:
+  pull_request:
+
+jobs:
+  fossier-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fossier AI content check
+        uses: PThorpe92/fossier@v1
+        with:
+          min-global-merge-ratio: 0.7
+          trust-score: 0.8
