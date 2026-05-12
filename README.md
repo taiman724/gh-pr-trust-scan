@@ -19,6 +19,11 @@ Most PR-quality scanners focus on code review automation or detecting spam. `gh-
 - Python 3.10+
 - [GitHub CLI (`gh`)](https://cli.github.com/) authenticated (`gh auth login`)
 
+## Background
+
+For the motivation and approach behind this tool, see the companion article: 
+[Pre-fork due diligence for OSS contributors](https://dev.to/taiman724/pre-fork-due-diligence-for-oss-contributors-3e9o)
+
 ## Installation
 
 ```bash
