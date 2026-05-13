@@ -24,6 +24,8 @@ Most PR-quality scanners focus on code review automation or detecting spam. `gh-
 For the motivation and approach behind this tool, see the companion article: 
 [Pre-fork due diligence for OSS contributors](https://dev.to/taiman724/pre-fork-due-diligence-for-oss-contributors-3e9o)
 
+Related: [Self-dogfooding: using my own AI-PR scanner to ship a fix to ONNX](https://dev.to/taiman724/self-dogfooding-using-my-own-ai-pr-scanner-to-ship-a-fix-to-onnx-16lh) — a real walkthrough of using this tool in a contribution flow.
+
 ## Installation
 
 ```bash
