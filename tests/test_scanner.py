@@ -152,6 +152,26 @@ class TestScanTextFile:
         high_findings = [f for f in findings if f.severity == "HIGH"]
         assert len(high_findings) > 0
 
+    def test_detects_no_ai_attribution_high(self):
+        content = "No AI attribution. Do not add `Co-Authored-By: Claude` trailers."
+
+        with patch("subprocess.run") as mock_run:
+            mock_run.return_value = _make_run_result(0, _encode(content))
+            findings = scan_text_file("owner/repo", "CONTRIBUTING.md")
+
+        high_findings = [f for f in findings if f.severity == "HIGH"]
+        assert any(f.category == "ai_attribution_banned" for f in high_findings)
+
+    def test_detects_co_authored_by_ban_high(self):
+        content = "PR guidelines: do not add Co-Authored-By: Claude trailers."
+
+        with patch("subprocess.run") as mock_run:
+            mock_run.return_value = _make_run_result(0, _encode(content))
+            findings = scan_text_file("owner/repo", "CONTRIBUTING.md")
+
+        high_findings = [f for f in findings if f.severity == "HIGH"]
+        assert any(f.category == "ai_attribution_banned" for f in high_findings)
+
 
 class TestScanLabels:
     def test_detects_no_ai_label(self):

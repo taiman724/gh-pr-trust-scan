@@ -110,6 +110,18 @@ TEXT_PATTERNS_HIGH: list[PatternEntry] = [
         "category": "ai_ban_explicit",
         "description": "'reject AI' found",
     },
+    {
+        "pattern": r"\bNo\s+AI\s+attribution\b",
+        "severity": "HIGH",
+        "category": "ai_attribution_banned",
+        "description": "'No AI attribution' policy found",
+    },
+    {
+        "pattern": r"\b(?:do\s+not|don't)\s+(?:add|use|include)\s+[^.\n]*?Co[\s\-]Authored[\s\-]By\b",
+        "severity": "HIGH",
+        "category": "ai_attribution_banned",
+        "description": "Co-Authored-By trailer ban found",
+    },
 ]
 
 TEXT_PATTERNS_MEDIUM: list[PatternEntry] = [
