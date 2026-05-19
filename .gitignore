@@ -4,6 +4,10 @@
 *.pem
 *.key
 secrets.json
+secrets/
+credentials/
+.aws/
+.ssh/
 
 # Python
 __pycache__/
