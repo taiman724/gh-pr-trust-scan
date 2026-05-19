@@ -178,6 +178,10 @@ for the broader context and rejection-vector taxonomy.
 
 MIT — see [LICENSE](LICENSE).
 
+## 💖 Support
+
+If `gh-pr-trust-scan` saves you time, consider [sponsoring my OSS work on GitHub](https://github.com/sponsors/taiman724). Sponsorships fund continued maintenance and new features.
+
 ---
 
-Built with AI assistance (Claude Sonnet 4.6 via Claude Code).
+Built with AI assistance via Claude Code (Claude Opus 4.7 / Sonnet 4.6).
