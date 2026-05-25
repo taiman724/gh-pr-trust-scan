@@ -163,6 +163,12 @@ The following are out of scope for v0.1 but are good candidates for future PRs:
 - GitLab / Gitea support
 - Config file for per-project allowlists
 
+## Support
+
+If this tool helped you, consider sponsoring continued development:
+
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/taiman724?style=flat-square&label=Sponsor&logo=github)](https://github.com/sponsors/taiman724)
+
 ## Acknowledgments
 
 This tool was built to scratch a real itch encountered while
@@ -177,10 +183,6 @@ for the broader context and rejection-vector taxonomy.
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-## 💖 Support
-
-If `gh-pr-trust-scan` saves you time, consider [sponsoring my OSS work on GitHub](https://github.com/sponsors/taiman724). Sponsorships fund continued maintenance and new features.
 
 ---
 
